@@ -1,0 +1,29 @@
+# Deno cache and build artifacts
+/deno.lock
+/deno-dir/
+
+# VSCode settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Coverage files
+coverage/
+lcov.info
+
+# Logs
+*.log
+npm-debug.log*
+
+# Tasks output (optional)
+*.out
+
+# Dependency analyzer output (optional)
+deno_graph.json
+
