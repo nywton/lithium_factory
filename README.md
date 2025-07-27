@@ -17,7 +17,7 @@ import {
   buildMany,
   define,
   defineAsync,
-} from "jsr:@nywton/lithium_factory";
+} from "jsr:@twigo/lithium_factory";
 ```
 
 **From GitHub (if not yet published):**
