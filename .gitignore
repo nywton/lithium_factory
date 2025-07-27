@@ -2,6 +2,8 @@
 /deno.lock
 /deno-dir/
 
+/cov_profile
+
 # VSCode settings
 .vscode/
 
