@@ -1,6 +1,11 @@
 import { assert } from "@std/assert/assert";
 import { assertEquals } from "@std/assert/equals";
-import { define, defineAsync, getFactory, hasFactory } from "./registry.ts";
+import {
+  define,
+  defineAsync,
+  getFactory,
+  hasFactory,
+} from "../src/registry.ts";
 
 type User = { id: number; name: string };
 
