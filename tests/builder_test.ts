@@ -42,10 +42,14 @@ Deno.test("buildMany(): builds multiple entities", async () => {
 });
 
 Deno.test("build(): works with async factory", async () => {
-  defineAsync("async_user", async () => ({
-    id: "a1",
-    role: "admin",
-  }));
+  defineAsync("async_user", async () => {
+    // Simulate async operation
+    await Promise.resolve();
+    return {
+      id: "a1",
+      role: "admin",
+    };
+  });
 
   const user = await build<{ id: string; role: string }>("async_user");
   assertEquals(user.role, "admin");
